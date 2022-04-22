@@ -1,3 +1,5 @@
 # go_study
 
 # test
+
+。
