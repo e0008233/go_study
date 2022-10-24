@@ -1,5 +1,7 @@
-# go_study
+# main - leetcode questions
+- https://programmercarl.com/
+- leetcode 101
 
-# test
+# system - design 
 
 。
