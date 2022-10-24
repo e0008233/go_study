@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
+	"go_study/main/arrays"
 )
 
 func main() {
 
 	fmt.Println("hello world")
-	fmt.Println(twoSum([]int{2, 7, 11, 15}, 9))
+	fmt.Println(arrays.MinSubArrayLen(7, []int{2, 3, 1, 2, 4, 3}))
 }
