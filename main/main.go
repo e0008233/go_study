@@ -2,11 +2,12 @@ package main
 
 import (
 	"fmt"
-	"go_study/main/arrays"
+
+	"go_study/main/hashmap"
 )
 
 func main() {
 
 	fmt.Println("hello world")
-	fmt.Println(arrays.MinSubArrayLen(7, []int{2, 3, 1, 2, 4, 3}))
+	fmt.Println(hashmap.ThreeSum([]int{-1, 0, 1, 2, -1, -4}))
 }
