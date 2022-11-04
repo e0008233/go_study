@@ -2,12 +2,10 @@ package main
 
 import (
 	"fmt"
-
-	"go_study/main/hashmap"
+	"go_study/main/string"
 )
 
 func main() {
 
-	fmt.Println("hello world")
-	fmt.Println(hashmap.ThreeSum([]int{-1, 0, 1, 2, -1, -4}))
+	fmt.Println(string.Calculate("1 + 1"))
 }
