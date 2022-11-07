@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
-	"go_study/main/string"
+	"go_study/main/dp"
 )
 
 func main() {
 
-	fmt.Println(string.Calculate("1 + 1"))
+	fmt.Println(dp.IntegerBreak(10))
 }
