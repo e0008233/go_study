@@ -18,11 +18,3 @@ func IntegerBreak(n int) int {
 
 	return dp[n]
 }
-
-func max(i, j int) int {
-	if i > j {
-		return i
-	} else {
-		return j
-	}
-}
