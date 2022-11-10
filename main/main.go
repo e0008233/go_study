@@ -7,5 +7,5 @@ import (
 
 func main() {
 
-	fmt.Println(dp.FindMaxForm([]string{"10", "0001", "111001", "1", "0"}, 5, 3))
+	fmt.Println(dp.Jump([]int{2, 3, 1, 1, 4}))
 }
