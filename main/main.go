@@ -2,10 +2,17 @@ package main
 
 import (
 	"fmt"
-	"go_study/main/dp"
 )
 
 func main() {
+	var things []string
+	things = append(things, "1")
+	for _, s := range things {
+		fmt.Printf(s)
+	}
+	fmt.Println(things) // true
 
-	fmt.Println(dp.Jump([]int{2, 3, 1, 1, 4}))
+	//fmt.Println(amazon.CountFamilyLogins([]string{"ab", "bc", "zz", "aa", "bb", "cc", "cc", "cc", "aa"}))
 }
+
+// change to existing kyc enum for event tracking
