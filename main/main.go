@@ -1,18 +1,35 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
-func main() {
-	var things []string
-	things = append(things, "1")
-	for _, s := range things {
-		fmt.Printf(s)
+// Get all prime factors of a given number n
+func PrimeFactors(n int64) (pfs []int64) {
+	// Get the number of 2s that divide n
+	for n%2 == 0 {
+		pfs = append(pfs, 2)
+		n = n / 2
 	}
-	fmt.Println(things) // true
 
-	//fmt.Println(amazon.CountFamilyLogins([]string{"ab", "bc", "zz", "aa", "bb", "cc", "cc", "cc", "aa"}))
+	// n must be odd at this point. so we can skip one element
+	// (note i = i + 2)
+	var i int64
+	for i = 3; i*i <= n; i = i + 2 {
+		// while i divides n, append i and divide n
+		for n%i == 0 {
+			pfs = append(pfs, i)
+			n = n / i
+		}
+	}
+
+	// This condition is to handle the case when n is a prime number
+	// greater than 2
+	if n > 2 {
+		pfs = append(pfs, n)
+	}
+
+	return
 }
 
-// change to existing kyc enum for event tracking
+func main() {
+	fmt.Println(PrimeFactors(3752182))
+}
