@@ -2,10 +2,12 @@ package main
 
 import (
 	"fmt"
-	"go_study/main/stack_and_queue"
+	"go_study/main/graph"
 )
 
 func main() {
+	result := graph.IsBipartite([][]int{{1, 3}, {0, 2}, {1, 3}, {0, 2}})
 
-	fmt.Println(stack_and_queue.EvalRPN([]string{"10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"}))
+	fmt.Print(result)
+
 }
